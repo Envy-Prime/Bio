@@ -29,7 +29,6 @@ body {
   }
  .sticker-container {
   position: relative;
-     width: 600px;
   height: 600px;
   overflow: hidden;
   background-color: transparent;
@@ -38,7 +37,7 @@ body {
 .moving-sticker {
   position: absolute;
   top: 600px;
-  left: 0;
+  left: 600px;
   width: 600px;
   height: 600px;
   animation: moveLeftRight 4s infinite alternate linear;
