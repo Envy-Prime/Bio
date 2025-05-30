@@ -27,4 +27,26 @@ body {
     background-color: #444;
     color: white;
   }
-  
+  .sticker-container {
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.moving-sticker {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 60px;
+  height: auto;
+  animation: moveLeftRight 4s infinite alternate linear;
+}
+
+@keyframes moveLeftRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 60px); /* 60px là chiều rộng sticker */
+}
