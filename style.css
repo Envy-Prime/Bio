@@ -38,7 +38,7 @@ body {
   position: absolute;
   top: 10px;
   left: 0;
-  height: 48px;     
+  height: 400px;     
   width: auto;      
   object-fit: contain;
   animation: moveLeftRight 4s infinite alternate linear;
@@ -46,7 +46,7 @@ body {
 
 @keyframes moveLeftRight {
   from {
-    left: 0;
+    left: calc(100% - 60px);
   }
   to {
     left: calc(100% - 60px); /* 60px là chiều rộng sticker */
