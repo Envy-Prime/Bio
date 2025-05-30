@@ -38,10 +38,9 @@ body {
   position: absolute;
   top: 10px;
   left: 0;
-  width: 800px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 4px;
+  height: 48px;     
+  width: auto;      
+  object-fit: contain;
   animation: moveLeftRight 4s infinite alternate linear;
 }
 
