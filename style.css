@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  color: #000000;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  position:relative;
+  height: 100px;
+  overflow:visible;
+  top: 10px;
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+}
+
+body, html {
+  overflow: visible;
+}
+
+section {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #444;
+  color: white;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* 👇 Di chuyển phần này ra ngoài footer */
+.sticker-container {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+sticker-container {
+  position: relative;
+  height: auto;       /* 👈 Cao vừa đủ chứa sticker */
+  min-height: 80px;
+  overflow: visible;
+  background-color: transparent;
+}
+}
+
+.moving-sticker {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 9999;
+  object-fit: contain;
+  animation: moveLeftRight 5s infinite alternate linear;
+  pointer-events: none;
+}
+
+@keyframes moveLeftRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: calc(100% - 80px); /* 10px là chiều rộng sticker */
+}
+
+}
