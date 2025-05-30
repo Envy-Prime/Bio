@@ -48,5 +48,5 @@ body {
     left: 0;
   }
   to {
-    left: calc(100% - 60px); /* 60px là chiều rộng sticker */
+    left: calc(100% - 600px); /* 60px là chiều rộng sticker */
 }
