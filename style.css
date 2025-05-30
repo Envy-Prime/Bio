@@ -38,7 +38,7 @@ body {
   position: absolute;
   top: 10px;
   left: 0;
-  width: 60px;
+  width: 10px;
   height: auto;
   animation: moveLeftRight 4s infinite alternate linear;
 }
