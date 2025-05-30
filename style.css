@@ -39,7 +39,7 @@ body {
   top: 10px;
   left: 0;
   width: auto;
-  height: 60px;
+  height: 600px;
   animation: moveLeftRight 4s infinite alternate linear;
 }
 
