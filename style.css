@@ -26,20 +26,19 @@ body {
     padding: 15px;
     background-color: #444;
     color: white;
-  }
- .sticker-container {
+.sticker-container {
   position: relative;
-  height: 600px;
+  height: 80px;
   overflow: hidden;
   background-color: transparent;
 }
 
 .moving-sticker {
   position: absolute;
-  top: 600px;
-  left: 600px;
-  width: 600px;
-  height: 600px;
+  top: 10px;
+  left: 0;
+  width: 60px;
+  height: auto;
   animation: moveLeftRight 4s infinite alternate linear;
 }
 
@@ -48,5 +47,5 @@ body {
     left: 0;
   }
   to {
-    left: calc(100% - 600px); /* 60px là chiều rộng sticker */
+    left: calc(100% - 60px); /* 60px là chiều rộng sticker */
 }
