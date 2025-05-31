@@ -9,7 +9,7 @@ body {
 header {
     background: linear-gradient(145deg, #ffffff, #d4d4d4); /* Hiệu ứng gradient giúp nhìn nổi bật hơn */
     border: 1px solid #ccc; /* Viền xung quanh */
-    border-radius: 10px; /* Làm bo góc mềm mại */
+    border-radius: 20px; /* Làm bo góc mềm mại */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), 
                 -5px -5px 15px rgba(255, 255, 255, 0.5); /* Hiệu ứng đổ bóng 3D */
     padding: 20px; /* Khoảng cách bên trong */
