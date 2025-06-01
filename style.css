@@ -109,17 +109,53 @@ html {
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
-  color: #fff;
   font-size: 28px;
   font-weight: bold;
   width: 100%;
   text-align: center;
-  text-shadow:
-    0 0 10px #8f00ff,
-    0 0 20px #00fff7,
-    0 0 40px #8f00ff,
-    0 0 80px #00fff7;
+  color: #fff; /* Chữ trắng */
+  animation: ledshadow 5s linear infinite;
 }
+
+/* Hiệu ứng bóng đèn led đổi màu */
+@keyframes ledshadow {
+  0% {
+    text-shadow:
+      0 0 20px #8f00ff,
+      0 0 40px #8c1ee0,
+      0 0 80px #8f00ff,
+      0 0 160px #932dd7;
+  }
+  25% {
+    text-shadow:
+      0 0 20px #7b00ff,
+      0 0 40px #8f00ff,
+      0 0 80px #6200ff,
+      0 0 160px #8f00ff;
+  }
+  50% {
+    text-shadow:
+      0 0 20px #00a6ff,
+      0 0 40px #8f00ff,
+      0 0 80px #8023f8,
+      0 0 160px #8f00ff;
+  }
+  75% {
+    text-shadow:
+      0 0 20px #8f00ff,
+      0 0 40px #8800ff,
+      0 0 80px #8f00ff,
+      0 0 160px #4c00ff;
+  }
+  100% {
+    text-shadow:
+      0 0 20px #8f00ff,
+      0 0 40px #884de9,
+      0 0 80px #8f00ff,
+      0 0 160px #a01aac;
+  }
+}
+
 
 .social-container {
   display: flex;
