@@ -112,6 +112,8 @@ html {
   color: hsl(0, 0%, 100%);
   font-size: 28px;
   font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
 
 .social-container {
