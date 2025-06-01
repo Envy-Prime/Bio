@@ -189,7 +189,7 @@ html {
 }
 
 .about-section {
-  margin-top: 65px;
+  margin-top: 60px;
   min-height: 100vh; /* chiếm toàn bộ chiều cao màn hình */
   display: flex;
   flex-direction: column;
