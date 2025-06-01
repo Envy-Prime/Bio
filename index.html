@@ -22,7 +22,7 @@
   </header>
 
   <!-- Video background area -->
-  <section class="video-container">
+  <section id="home" class="video-container">
     <video autoplay muted loop playsinline>
       <source src="blackhole.webm" type="video/webm">
       Your browser does not support WebM video.
@@ -67,5 +67,11 @@
   </section>
 
   <script src="script.js"></script>
+  <script>
+window.addEventListener('DOMContentLoaded', function() {
+  location.hash = "#home";
+});
+</script>
+
 </body>
 </html>
