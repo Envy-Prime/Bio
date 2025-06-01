@@ -68,9 +68,12 @@
   </section>
 
   <script src="script.js"></script>
-  <script>
-window.addEventListener('DOMContentLoaded', function() {
-  location.hash = "#home";
+<script>
+window.addEventListener('pageshow', function() {
+  var home = document.getElementById('home');
+  if (home) {
+    home.scrollIntoView({behavior: "auto"});
+  }
 });
 </script>
 
