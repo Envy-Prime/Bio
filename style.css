@@ -189,7 +189,7 @@ html {
 }
 
 .about-section {
-  margin-top: 70px;
+  margin-top: 65px;
   min-height: 100vh; /* chiếm toàn bộ chiều cao màn hình */
   display: flex;
   flex-direction: column;
@@ -203,6 +203,7 @@ html {
 
 .job-section {
   padding: 120px 20px;
+  min-height: 100vh;
   background: #000000;
   color: white;
   text-align: center;
