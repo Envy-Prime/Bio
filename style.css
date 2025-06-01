@@ -217,3 +217,24 @@ html {
   margin-top: 180px; /* Khoảng cách với job-section */
   margin-bottom: 360px;  
 }
+
+.led-gradient {
+  background: linear-gradient(270deg, #8f00ff, #00fff7, #8f00ff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: ledmove 6s linear infinite;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@keyframes ledmove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
