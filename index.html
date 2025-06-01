@@ -22,7 +22,7 @@
   </header>
 
   <!-- Video background area -->
-  <section id="home" class="video-container">
+  <section id="home"  class="video-container">
     <video autoplay muted loop playsinline>
       <source src="blackhole.webm" type="video/webm">
       Your browser does not support WebM video.
@@ -69,13 +69,20 @@
 
   <script src="script.js"></script>
 <script>
-window.addEventListener('pageshow', function() {
-  var home = document.getElementById('home');
-  if (home) {
-    home.scrollIntoView({behavior: "auto"});
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
   }
-});
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
+  window.addEventListener('load', function () {
+    setTimeout(() => window.scrollTo(0, 0), 0);
+  });
 </script>
+
+
 
 </body>
 </html>
