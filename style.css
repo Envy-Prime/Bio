@@ -109,11 +109,16 @@ html {
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
-  color: hsl(0, 0%, 100%);
+  color: #fff;
   font-size: 28px;
   font-weight: bold;
   width: 100%;
   text-align: center;
+  text-shadow:
+    0 0 10px #8f00ff,
+    0 0 20px #00fff7,
+    0 0 40px #8f00ff,
+    0 0 80px #00fff7;
 }
 
 .social-container {
