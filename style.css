@@ -21,8 +21,7 @@ body {
 }
 
 #about {
-  scroll-margin-top: 60px;
-  top:auto;
+  scroll-margin-top: 30px;
   position: relative;
   display: flex;
   align-items: center;
@@ -32,13 +31,13 @@ body {
 
 
 #job {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 30px;
   position: relative;
   text-align: center;
 }
 
 #product {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 60px;
   position: relative;
   text-align: center;
 }
@@ -198,7 +197,7 @@ html {
   background: black;
   color: white;
   text-align: center;
-  padding: 0 20px;
+  padding: 0px 20px;
 }
 
 .job-section {
@@ -214,4 +213,5 @@ html {
   color: white;
   text-align: center;
   margin-top: 180px; /* Khoảng cách với job-section */
+  margin-bottom: 360px;  
 }
