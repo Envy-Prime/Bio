@@ -219,7 +219,7 @@ html {
 }
 
 .led-gradient {
-  background: linear-gradient(270deg, #8f00ff, #00fff7, #8f00ff);
+  background: linear-gradient(270deg, #8f00ff, #00a6ff, #8f00ff);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
