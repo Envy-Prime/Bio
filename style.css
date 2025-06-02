@@ -54,6 +54,10 @@ html {
   list-style: none;
 }
 
+.cards-container h2 {
+  font-size: 13px;
+}
+
 .navbar li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -242,7 +246,7 @@ html {
 }
 
 .about-section {
- padding: 140px 20px;
+ padding: 180px 20px;
   min-height: 100px;
   background: #000000;
   color: white;
@@ -260,6 +264,7 @@ html {
 .job-section {
   padding: 100px 20px;
   min-height: 100px;
+  margin-top: 80px;
   background: #000000;
   color: white;
   text-align: center;
