@@ -323,6 +323,7 @@ html {
   .card {
     max-width: 95%; /* Đảm bảo hiển thị vừa màn hình điện thoại */
     font-size: 14px;
+    box-sizing: border-box;
   }
 }
 
@@ -405,7 +406,10 @@ html {
   text-align: left;
   padding-left: 20px;
   margin: 0;
+  word-break: break-word;
 }
 .job-list li {
   margin-bottom: 6px;
+  word-break: break-word;
+    overflow-wrap: anywhere;
 }
