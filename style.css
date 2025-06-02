@@ -298,13 +298,6 @@ html {
   background: #000000;
 }
 
-@media screen and (max-width: 767px) {
-  .cards-container {
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px; /* giảm padding để card rộng hơn */
-  }
-}
 
 /* Thẻ chung */
 .card {
