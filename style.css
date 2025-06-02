@@ -91,6 +91,13 @@ html {
   z-index: 2;
 }
 
+.about-section h2 {
+  margin-bottom: 15px; /* hoặc giá trị bạn muốn */
+}
+.job-section h2 {
+  margin-bottom: 15px; /* hoặc giá trị bạn muốn */
+}
+
 .content p {
   top: 30px;
   position: relative;
