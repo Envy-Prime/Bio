@@ -235,21 +235,24 @@ html {
 }
 
 .about-section {
-  margin-top: 55px;
-  min-height: 100vh; /* chiếm toàn bộ chiều cao màn hình */
+ padding: 140px 20px;
+  min-height: 100px;
+  background: #000000;
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* căn giữa dọc */
-  align-items: center;     /* căn giữa ngang */
-  background: black;
-  color: white;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 0px 20px;
+   position: relative;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .job-section {
-  padding: 120px 20px;
-  min-height: 100vh;
+  padding: 100px 20px;
+  min-height: 100px;
   background: #000000;
   color: white;
   text-align: center;
@@ -260,12 +263,11 @@ html {
 }
 
 .product-section {
-  padding: 120px 20px;
+  padding: 90px 20px;
   min-height: 100vh;
   background: #000000;
   color: white;
   text-align: center;
-  margin-top: 180px; /* Khoảng cách với job-section */
 }
 
 .led-gradient {
@@ -294,7 +296,7 @@ html {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 60px;
+  padding: 30px;
   background: #000000;
 }
 
@@ -302,9 +304,9 @@ html {
 /* Thẻ chung */
 .card {
   width: 250px;
-  height: 350px;
+  height: 300px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 20px 10px;
   color: #292929;
   background: #f5f5f5;
   box-shadow: 0px 35px 65px rgba(40, 28, 210, 0.5);
@@ -385,7 +387,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  height: 50px; /* Điều chỉnh cao thấp tuỳ mắt nhìn */
+  height: 40px; /* Điều chỉnh cao thấp tuỳ mắt nhìn */
   background: linear-gradient(to bottom, #000 0%, transparent 100%);
   pointer-events: none;
   z-index: 2;
@@ -394,11 +396,11 @@ html {
 /* Fade ở dưới */
 .video-fade-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
   right: 0;
-  height: 50px;
-  background: linear-gradient(to top, #000 0%, transparent 100%);
+  height: 70px;
+  background: linear-gradient(to top, #000000 0%, transparent 100%);
   pointer-events: none;
   z-index: 2;
 }
