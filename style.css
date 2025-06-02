@@ -116,7 +116,7 @@ html {
   color: #fff; /* Chữ trắng */
     border: 2px solid #fff;      /* viền trắng */
   border-radius: 24px; 
-   padding: 12px 28px;
+   padding: 10px 18px;
   animation: ledshadow 5s linear infinite;
 }
 
