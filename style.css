@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+
+
 body {
   font-family: sans-serif;
   background: rgb(0, 0, 0);
@@ -283,7 +285,7 @@ html {
 }
 
 .led-gradient {
-  background: linear-gradient(270deg, #8f00ff, #cdd0d2, #8f00ff);
+  background: linear-gradient(270deg, #CC00FF, #ffffff, #CC00FF, #ffffff);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
