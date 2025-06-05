@@ -6,3 +6,9 @@ window.addEventListener('scroll', () => {
   const opacity = 1 - Math.min(Math.max(scrollY - fadeStart, 0) / (fadeEnd - fadeStart), 1);
   video.style.opacity = opacity;
 });
+
+document.addEventListener("touchend", function(event) {
+  if (event.cancelable) {
+    event.preventDefault();
+  }
+});
