@@ -8,9 +8,11 @@
   <link rel="icon" type="image/png" href="IMG_5925.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="apple-touch-icon" href="IMG_5925.jpg">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Envy">
+<link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" />
+
 </head>
 <body>
 
@@ -25,7 +27,7 @@
     </nav>
   </header>
 
-  <!-- Video background area -->
+
   <section id="home"  class="video-container">
     <video autoplay muted loop playsinline>
       <source src="blackhole.webm" type="video/webm">
@@ -72,26 +74,24 @@
        <div class="video-fade-top"></div> 
        <div class="video-fade-bottom"></div>
       <div class="card card1">
-    <div class="date">option <span>ONE</span></div>
+    <div class="date"> <span>BASIC</span></div>
   <ul class="job-list">
-    <h2><li>Quay review unbox.</li>
+    <li>Quay review unbox.</li>
     <li>Thời lượng 30s-45s.</li>
     <li>Gửi demo nếu shop yêu cầu.</li>
     <li>Freecast khi nhận mẫu free.</li>
     <li>Trả demo, video sau 4 ngày từ khi nhận sản phẩm.</li>
-    </h2>
   </ul>
     </div>
 
   <div class="card card2">
-    <div class="date">option <span>TWO</span></div>
+    <div class="date"> <span>PREMIUM</span></div>
       <ul class="job-list">
-    <h2><li>Quay review unbox.</li>
+    <li>Quay review unbox.</li>
     <li>Thời lượng 30s-45s.</li>
     <li>Gửi demo nếu shop yêu cầu.</li>
     <li>Lồng tiếng video, cast sẽ thương lượng sau.</li>
     <li>Trả demo, video sau 4 ngày từ khi nhận sản phẩm.</li>
-    </h2>
   </ul>
   </div>
     </div>
@@ -117,8 +117,20 @@
     setTimeout(() => window.scrollTo(0, 0), 0);
   });
 </script>
-
-
+<script>
+  document.querySelectorAll('.card').forEach(card => {
+    // Toggle khi click chuột
+    card.addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+    // Toggle khi chạm cảm ứng (vân tay)
+    card.addEventListener('touchend', function(e) {
+      this.classList.toggle('active');
+      // Ngăn sự kiện click lặp lại sau touch
+      e.preventDefault();
+    });
+  });
+</script>
 
 </body>
 </html>
