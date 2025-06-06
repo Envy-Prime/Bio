@@ -119,15 +119,15 @@
 </script>
 <script>
   document.querySelectorAll('.card').forEach(card => {
-    // Toggle khi click chuột
-    card.addEventListener('click', function() {
-      this.classList.toggle('active');
-    });
-    // Toggle khi chạm cảm ứng (vân tay)
+    let touched = false;
     card.addEventListener('touchend', function(e) {
+      touched = true;
       this.classList.toggle('active');
-      // Ngăn sự kiện click lặp lại sau touch
-  
+      setTimeout(() => { touched = false; }, 500);
+    });
+    card.addEventListener('click', function(e) {
+      if (touched) return; // Đã xử lý ở touchend rồi
+      this.classList.toggle('active');
     });
   });
 </script>
