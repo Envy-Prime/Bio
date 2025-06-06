@@ -8,7 +8,8 @@ window.addEventListener('scroll', () => {
 });
 
 document.addEventListener("touchend", function(event) {
-  if (event.cancelable) {
-    event.preventDefault();
-  }
+    if (event.cancelable) {
+        event.preventDefault();
+    }
 });
+
