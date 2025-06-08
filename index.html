@@ -119,16 +119,28 @@
 </script>
 <script>
   document.querySelectorAll('.card').forEach(card => {
-    let touched = false;
-    card.addEventListener('touchend', function(e) {
-      touched = true;
-      this.classList.toggle('active');
-      setTimeout(() => { touched = false; }, 500);
-    });
-    card.addEventListener('click', function(e) {
-      if (touched) return; // Đã xử lý ở touchend rồi
+    card.addEventListener('click', function() {
       this.classList.toggle('active');
     });
+  });
+</script>
+<script>
+  const version = new Date().getTime(); // tạo chuỗi version theo timestamp
+
+  // Tự động thêm version cho CSS
+  document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && !href.includes('?v=')) {
+      link.setAttribute('href', href + '?v=' + version);
+    }
+  });
+
+  // Tự động thêm version cho JS
+  document.querySelectorAll('script[src]').forEach(script => {
+    const src = script.getAttribute('src');
+    if (src && !src.includes('?v=')) {
+      script.setAttribute('src', src + '?v=' + version);
+    }
   });
 </script>
 
