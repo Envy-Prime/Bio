@@ -7,9 +7,5 @@ window.addEventListener('scroll', () => {
   video.style.opacity = opacity;
 });
 
-document.addEventListener("touchend", function(event) {
-    if (event.cancelable) {
-        event.preventDefault();
-    }
-});
+
 
